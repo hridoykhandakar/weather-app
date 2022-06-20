@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-image: url(./turkey.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-section {
+  background: rgba(3, 3, 32, 0.8);
+  min-width: 400px;
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+input:autofill {
+  background: transparent;
+}
+input:-webkit-autofill {
+  background: transparent;
+}
+input::placeholder {
+  color: #fff;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #e36666;
+}
+.s-input {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 25px;
+}
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* data  section */
+.data-section {
+  margin-top: 100px;
+  color: #fff;
+  background: rgba(3, 3, 32, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 400px;
+  padding: 70px 30px;
+  border-radius: 20px;
+}
+
+.icon-img {
+  height: 50px;
+  width: 50px;
+}

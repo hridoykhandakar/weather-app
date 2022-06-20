@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="search-section">
+          <form class="form" action="/" method="POST">
+            <input
+              class="s-input"
+              type="text"
+              name="city"
+              placeholder="Location"
+            />
+            <button class="btn" type="submit">
+              <img src="./icons8-search.svg" alt="" />
+            </button>
+          </form>
+        </div>
+        <div class="data-section">
+          <h1><%= temp%>&deg</h1>
+          <div class="city">
+            <h2><%= cityName%></h2>
+            <span class="date-time"> <%= time%> </span>
+          </div>
+          <div class="icon">
+            <img class="icon-img" src="<%= icon %>" />
+            <p><%= des%></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
